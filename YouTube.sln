@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTube.Domain", "YouTube.Domain\YouTube.Domain.csproj", "{A0F4C298-8344-4E85-8B55-2BE7D0B26EF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTube.Web", "YouTube.Web\YouTube.Web.csproj", "{65796098-0702-4FE0-97D2-1FEB75FA51FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTube.Web.Tests", "YouTube.Web.Tests\YouTube.Web.Tests.csproj", "{066397A3-04CA-4605-B459-90854B5E2AB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0F4C298-8344-4E85-8B55-2BE7D0B26EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F4C298-8344-4E85-8B55-2BE7D0B26EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F4C298-8344-4E85-8B55-2BE7D0B26EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F4C298-8344-4E85-8B55-2BE7D0B26EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65796098-0702-4FE0-97D2-1FEB75FA51FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65796098-0702-4FE0-97D2-1FEB75FA51FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65796098-0702-4FE0-97D2-1FEB75FA51FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65796098-0702-4FE0-97D2-1FEB75FA51FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066397A3-04CA-4605-B459-90854B5E2AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066397A3-04CA-4605-B459-90854B5E2AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066397A3-04CA-4605-B459-90854B5E2AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066397A3-04CA-4605-B459-90854B5E2AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+.header-div {
+  font-family: arial; font-size: 24px; margin: 0px 0px 0px 0px; background-color: #003366; color: #ffffff;
+
+}
+
+$kitchensink-header-background-color: #003366;
+$kitchensink-header-text-color: #fff;
+
+.northContainer {
+    background-color: $kitchensink-header-background-color;
+	//border-bottom: 1px solid $kitchensink-header-background-color;
+}
+
+.northTitle {
+    padding: 15px 0 10px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.northLogo {
+    width: 40px;
+    height: 25px;
+    background: url(images/logo.png) no-repeat center 4px;
+}
+
+.northMenu {
+    background-image: url(images/options.png);
+    width: 22px;
+    height: 22px;
+}

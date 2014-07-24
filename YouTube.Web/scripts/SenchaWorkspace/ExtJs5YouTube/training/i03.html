@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ExtJs5</title>
+    <script src="http://cdn.sencha.com/ext/gpl/5.0.0/build/ext-all-debug.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext/gpl/5.0.0/packages/ext-theme-crisp-touch/build/resources/ext-theme-crisp-touch-all.css" />
+    <script>
+
+        Ext.define('ExtJs5.view.navigation.NavigationController', {
+            extend: 'Ext.app.ViewController',
+            alias: 'controller.navigationController',
+            onClearClick: function () {
+                alert('onClearClick');
+            }
+        });
+
+        Ext.define("ExtJs5.view.navigation.Navigation", {
+            extend: 'Ext.panel.Panel',
+            xtype: 'navigation',
+            title: 'Navigation',
+            controller: "navigationController",
+            width: 200,
+            minWidth: 200,
+            split: true,
+            collapsible: true,
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    dock: 'top',
+                    items: [
+                        { text: 'Clear', width: '100px', handler: 'onClearClick' }
+                    ]
+                }
+            ]
+        });
+
+        Ext.define('ExtJs5.view.main.Main', {
+            extend: 'Ext.container.Container',
+            layout: 'border',
+            items: [
+                { region: 'north',  html: 'north'       },
+                { region: 'west',   xtype: 'navigation' },
+                { region: 'center', html: 'center'      },
+                { region: 'east',   html: 'details'     },
+                { region: 'south',  html: 'south'       }
+            ]
+        });
+
+        Ext.define('ExtJs5.Application', {
+            extend: 'Ext.app.Application',
+            name: 'ExtJs5',
+            init: function () {
+                console.log('application init');
+            },
+            launch: function () {
+            }
+        });
+
+        Ext.application({
+            name: 'ExtJs5',
+            autoCreateViewport: 'ExtJs5.view.main.Main',
+            extend: 'ExtJs5.Application'
+        });
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
